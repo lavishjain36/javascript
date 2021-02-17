@@ -1,0 +1,32 @@
+<!-- A string is 0 or more character written inside quotes.
+String can be Objects
+Normally,JS string are primitive values,create from literals:
+
+var name="Lavish"
+
+But string can also be defined as a object with the keyword new
+
+var firstName=new String("Lavish") -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Object</title>
+</head>
+<body>
+    <script>
+        var x="Lavish";
+        var y=new String("Lavish")
+        document.write(x===y)
+        document.write(x==y)
+        document.write(typeof(y))
+        document.write(typeof(x))
+
+    </script>
+</body>
+</html>
