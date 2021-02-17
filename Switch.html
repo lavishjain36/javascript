@@ -1,0 +1,62 @@
+<!-- Switch- It used to select one of many block of code to be executed in
+switch(expression){
+    case constant:code ;
+                    break; 
+    case constant :code; 
+                   break;  
+            default:code ;
+} -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+<body>
+    <h3>Enter your choice</h3>
+    <ul>
+        <li>Add</li>
+        <li>Sub</li>
+        <li>Mult</li>
+    </ul>
+
+    <br>
+    <form action="">
+        <input type="text" name="" id="choice">
+        <br>
+        <button onclick="myfun()">Click Me</button>
+    </form> 
+
+
+    <script>
+        function myfun(){
+            var choice = document.getElementById("choice").value;
+            // alert(choice)
+
+            switch(choice){
+                      case "add":var a=10;
+                                 var b=20;
+                                 var sum=a+b;
+                                 document.write("Addition is"+sum) 
+                                 break;
+                      case "sub":var a=10;
+                                 var b=20;
+                                 var sub=a-b;
+                                 document.write("Subtraction is"+sub) 
+                                 break;
+
+                      case "mul":var a=10;
+                                 var b=20;
+                                 var mult=a+b;
+                                 document.write("Multiplication is"+mult)  
+                                 break;
+  
+                       default:alert("Not a valid Input");
+            }
+        }
+    </script>
+</body>
+</html>
